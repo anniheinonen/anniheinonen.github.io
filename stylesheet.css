@@ -75,6 +75,7 @@
 .yleista img {
      height: 40%;
      margin-left: 3%;
+     float: left;
 }
 
 .yh {
