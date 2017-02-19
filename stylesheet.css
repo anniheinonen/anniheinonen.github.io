@@ -1,5 +1,5 @@
 .navigation {
-    background-color: rgba(188, 244, 66, 0.9);
+    background-color: rgba(32, 135, 23, 0.7);
     text-align: center;
     top: 0px;
     left: 0px;
@@ -51,7 +51,8 @@
 }
 
 .container {
-    background-color: #20B046;
+    background-size: contain;
+    background-image: url("http://smashingyolo.com/wp-content/uploads/2014/09/Shades-of-Green-Color-Names3.jpg")
 }
 
 .text {
