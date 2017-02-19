@@ -1,0 +1,201 @@
+.navigation {
+    background-color: rgba(188, 244, 66, 0.9);
+    text-align: center;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 9999;
+    position: fixed;
+}
+
+.navigation li {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: inline-block;   
+    margin-right: 20px;
+    font-family: Sansita;
+    font-size: 20px;
+    border-width: 2px;
+    border-style: dotted;
+    border-radius: 10%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.navigation a {
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: bisque;
+}
+
+.header {
+    font-size: 35px;
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-image: url("http://www.siikary.fi/wp-content/2015/07/11Kallio.jpg")
+}
+
+.header h1 {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  top: 45%;
+  color: #0AF248;
+}
+
+.container {
+    background-color: #20B046;
+}
+
+.text {
+    font-size: 35px;
+    font-family: 'Roboto', 'sans-serif';
+    text-align: center;
+    margin: 5px;
+}
+
+.yleista {
+    height: 30%;
+    display: inline-block;
+}
+
+.yleista p {
+    float: right;
+}
+
+.yleista img {
+     height: 40%;
+     margin-left: 3%;
+}
+
+.yh {
+    height: 30%;
+    display: inline-block;
+}
+
+.yh p {
+   float: left; 
+}
+
+.yh img {
+    float: right;
+    margin-right: 3%;
+}
+
+.rakennuttajalle {
+    height: 30%;
+    display: inline-block;
+    margin-bottom: 5%;
+}
+
+.rakennuttajalle p {
+    float: right;
+}
+
+.tietoa p {
+    width: 50%;
+    font-size: 0.5em;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10%;
+    padding: 1.2em;
+    margin-left: 2em;
+    margin-right: 3%;
+    max-width: 600px;
+    }
+
+.tietoa h2 {
+    font-size: 30px;
+    font-family: Sansita;    
+}
+
+.tietoa img {
+    height: auto;
+    width: auto;
+    max-width: 364px;
+    min-height: 310px;
+}
+.rakennuttajalle img {
+    float: left;
+    margin-left: 3%;
+}
+
+footer {
+    height: 50px;
+    display: block;
+    margin: 5px 10px 20px 10px;
+}
+
+footer h1 {
+    font-size: 18px;
+}
+
+footer img {
+    float: right;
+    width: 30%;
+}
+
+.video-container {
+    margin-top: 2%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1038px) {
+      .tietoa h2 {
+        display: block;
+    }
+    .yleista {
+        display: block;
+    }
+    
+    .yh {
+        display: block;
+    }
+    
+    .rakennuttajalle {
+        display: block;
+    }
+    
+    .tietoa p {
+        float: none;
+        margin: 0% 10% 5% 24%;
+    }
+    
+    .tietoa img {
+        float: none;
+        margin-bottom: 20px;
+    }  
+    
+    footer {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 700px) {
+    
+    h1 {
+        font-size: 50px
+    }
+    
+    .teksti {
+        font-size: 25px;
+    }
+  
+    }
