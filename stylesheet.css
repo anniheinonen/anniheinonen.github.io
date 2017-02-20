@@ -40,10 +40,6 @@ nav a:visited {
     color: bisque;
 }
 
-nav li.active {
-    background-color: black;
-}
-
 .header {
     font-size: 35px;
     font-family: 'PT Serif', serif;
