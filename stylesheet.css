@@ -200,5 +200,15 @@ footer img {
     .teksti {
         font-size: 25px;
     }
+    
+    .navigation li {
+        font-size: 15.5px;
+    }
+    
+    @media screen and (max-width: 350px){
+        .container img {
+            max-width: 300px;
+        }
+    }
   
     }
