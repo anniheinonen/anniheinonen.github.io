@@ -208,6 +208,7 @@ footer img {
     @media screen and (max-width: 350px){
         .container img {
             max-width: 280px;
+            max-height: 300px;
         }
     }
   
