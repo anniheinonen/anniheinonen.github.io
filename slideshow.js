@@ -13,7 +13,7 @@ function display() {
     $.getJSON("https://heinona10.firebaseio.com/.json", function (data) {
         $('#otsikko').hide().html(data.uutiset[index].otsikko).fadeIn(2000)
         $('#paivamaara').hide().html(data.uutiset[index].paivamaara).fadeIn(2000);
-        $('#sisalto').fadeOut(1000).hide().html(data.uutiset[index].sisalto).fadeIn(2000);
+        $('#sisalto').hide().html(data.uutiset[index].sisalto).fadeIn(2000);
         localStorage.setItem("indeksi", index)
     });
 }
@@ -41,14 +41,14 @@ function previousSlide() {
 }
 
 var isPaused = false;
-var myVar = setInterval(function () { nextSlide() }, 7000);
+var myVar = setInterval(function () { nextSlide() }, 10000);
 function playpause() {
     'use strict';
     if (!isPaused) {    
         window.clearInterval(myVar);
         isPaused = true;
     } else {
-        myVar = setInterval(function () { nextSlide() }, 7000);
+        myVar = setInterval(function () { nextSlide() }, 10000);
         isPaused = false;
     }
 }
