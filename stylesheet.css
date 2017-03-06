@@ -142,8 +142,11 @@ nav a:visited {
 
 .articles {
     min-height: 370px;
+    min-width: 300px;
     background-color: rgba(32, 135, 23, 0.5);
     margin: 0 30% 0 30%;
+    border-style: solid;
+    border-color: rgb(32, 135, 23);
 }
 
 .articles p {
@@ -175,6 +178,8 @@ nav a:visited {
 .button {
     background-color: rgba(32, 135, 23, 0.7);
     border-radius: 8px;
+    border-color: rgba(32, 135, 23, 0.7);
+    padding: 4px 8px 4px 8px;
 }
 
 footer {
@@ -254,6 +259,10 @@ footer img {
     .fb {
         width: 8%;
     }
+    
+     #pause {
+      margin-left: 30%;
+    }
 }
 @media screen and (max-width: 700px) {
     
@@ -268,6 +277,15 @@ footer img {
     .navigation li {
         font-size: 15.5px;
     }
+    
+    .articles {
+        margin-left: 12%;
+    }
+    
+    #pause {
+      margin-left: 10%;
+    }
+    
 }
     
     @media screen and (max-width: 350px) {
@@ -285,5 +303,6 @@ footer img {
        .header h1 {
             font-size: 37px;
     }
+        
 }
   
