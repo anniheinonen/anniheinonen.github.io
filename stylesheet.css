@@ -222,6 +222,11 @@ footer img {
     border: 0;
 }
 
+.video {
+    position: relative;
+    margin-left: 20%;
+}
+
 @media screen and (max-width: 1038px) {
       .tietoa h2 {
         display: block;
