@@ -143,8 +143,8 @@ nav a:visited {
 .articles {
     min-height: 370px;
     min-width: 300px;
+    margin: 50px;
     background-color: rgba(32, 135, 23, 0.5);
-    margin: 0 30% 0 30%;
     border-style: solid;
     border-color: rgb(32, 135, 23);
 }
@@ -171,7 +171,7 @@ nav a:visited {
 }
 
 #pause {
-    margin-left: 37%;
+    margin-left: 40%;
     font-family: 'Roboto';
 }
 
@@ -222,9 +222,15 @@ footer img {
     border: 0;
 }
 
+.video-container2 {
+    margin: 10px;
+}
+
 .video {
-    position: relative;
-    margin-left: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
 }
 
 @media screen and (max-width: 1038px) {
