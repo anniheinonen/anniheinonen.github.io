@@ -58,24 +58,24 @@
                 <h2  id="otsikko"></h2>
                 <h4 id="paivamaara"></h4>
                 <p id="sisalto"></p>
-        </div>
-        <div class= "video-container2">
-            <video width="300" height="400" class="video" controls poster="nayttokuva.png" autoplay>
-                <source src="maal_mp_m.mpg" type="video/mpg">
-                <source src="maalämpö.mov" type="video/mov">
-                <source src="maal_mp_m.ogv" type="video/ogv">
-                <source src="maal_mp_m.webm" type="video/webm">
-                <object width="640" height="360" type="application/x-shockwave-flash" data="player.swf">
-                  <param name="movie" value="player.swf" />
-                  <param name="flashvars" value="controlbar=over&amp;image=nayttokuva.png&amp;file=maal_mp_m.mpg" />
-                  <img src="nayttokuva.png" width="640" height="360" alt="Video"
-                 title="No video playback capabilities, please download the video below" />
-               </object>
-                <p>	<strong>Download Video:</strong>
-                   Closed Format:	<a href="maal_mp_m.mpg">"MPG"</a>
-                   Open Format:	<a href="maal_mp_m.ogv">"Ogv"</a>
+            </div>
+            <div class= "video-container2">
+                <video controls="controls" poster="nayttokuva.png"  width="640" height="360" class="video">
+                   <source src="maal_mp_m.webm" type="video/webm" />
+                   <source src="maal_mp_m.ogv" type="video/ogg" />
+                   <source src="maal_mp_m.mpg" type="video/mpg">
+                   <source src="maalämpö.mov" type="video/mov">
+                   <object type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="640" height="360">
+                  <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+                <param name="allowFullScreen" value="true" />
+                <param name="wmode" value="transparent" />
+                <param name="flashVars" value="config={'playlist':['nayttokuva.png',{'url':'','autoPlay':false}]}" />
+                <img alt="Video" src="nayttokuva.png" width="640" height="360" title="No video playback capabilities, please download the video below" />
+            </object>
+                </video>
+                <p id="linkit">
+                    <strong>Download video:</strong> <a href="maal_mp_m.ogv">Ogg format</a> | <a href="maal_mp_m.webm">WebM format</a>
                 </p>
-            </video>
         </div>
         </div>
             <footer>
