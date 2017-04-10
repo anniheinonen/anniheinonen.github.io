@@ -54,6 +54,7 @@ var monster2 = {};
 var keysDown = {};
 
 addEventListener("keydown", function (e) {
+    event.preventDefault();
 	keysDown[e.keyCode] = true;
 }, false);
 
