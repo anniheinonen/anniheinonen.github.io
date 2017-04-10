@@ -29,6 +29,20 @@ monsterImage.onload = function () {
 };
 monsterImage.src = "lumiukko.png";
 
+var plusReady = false;
+var plusImage = new Image();
+plusImage.onload = function () {
+	plusReady = true;
+};
+plusImage.src = "plus.png";
+
+var minusReady = false;
+var minusImage = new Image();
+minusImage.onload = function () {
+	minusReady = true;
+};
+minusImage.src = "minus.png";
+
 // Game objects
 var hero = {
 	speed: 256 // movement in pixels per second
@@ -100,6 +114,14 @@ var render = function () {
 
     if (monsterReady) {
         ctx.drawImage(monsterImage, monster.x, monster.y, 60, 60);
+    }
+    
+    if (plusReady) {
+        ctx.drawImage(plusImage, 10, 440, 30, 30);
+    }
+    
+    if (minusReady) {
+        ctx.drawImage(minusImage, 50, 440, 30, 30);
     }
 };
 
@@ -215,17 +237,35 @@ var move = function () {
     }
 };
 
-var changeSpeed = function (change) {
-    player.speed += change;
+var moreSpeed = function () {
+    hero.speed += 10;
+};
+
+var lessSpeed = function () {
+    hero.speed -= 10; 
+};
+
+function getMousePos(canvas, evt) {
+    var rect = canvas.getBoundingClientRect();
+    return {
+      x: evt.clientX - rect.left,
+      y: evt.clientY - rect.top
+    };
 }
 
-var eliminate = function () {
-    if (event.clientX == hero.x && event.clientY == hero.y) {
-        window.console.log("jee");
+var click = function (X, Y) {
+    if (X >= monster.x  && X <= monster.x + 60 && Y <= monster.y + 60) {
+       monsterReady = false;
+} else if (X >= 10 && X <= 40 && Y >= 450) {
+    moreSpeed();
+} else if (X > 45 && X < 90 && Y >= 450) {
+    lessSpeed();
 }
 };
 
-canvas.addEventListener("mousedown", eliminate, false);
+canvas.addEventListener("mousedown", function(e){
+     click(getMousePos(canvas,e).x, getMousePos(canvas,e).y);
+  });
 
 // Let's play this game!
 var then = Date.now();
